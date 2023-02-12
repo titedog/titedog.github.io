@@ -1,3 +1,4 @@
+//git push -u origin main
 import * as THREE from 'three';
 
 import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
@@ -41,9 +42,9 @@ function init() {
   scene.background = new THREE.Color( 0x111111 );
   scene.fog = new THREE.Fog( 0x111111, 150, 200 );
 
-  const geometryBox = box( 50, 50, 50 );
+  const geometryBox = box(50, 50, 50);
 
-  const lineSegments = new THREE.LineSegments( geometryBox, new THREE.LineDashedMaterial( { color: 0xffaa00, dashSize: 3, gapSize: 1 } ) );
+  const lineSegments = new THREE.LineSegments( geometryBox, new THREE.LineDashedMaterial( { color: 0xffaa00, dashSize: 5, gapSize: 2 } ) );
   lineSegments.computeLineDistances();
 
   objects.push( lineSegments );
