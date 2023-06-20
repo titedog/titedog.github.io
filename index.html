@@ -9,6 +9,52 @@
   <meta name="author" content="titedog">
 </head>
 <body>
-  <h3>There isn't anything here yet.</h3>
+  <div class="outlined-box">
+    <h1>titedogs hub</h1>
+    <ul>
+      <li><a href="https://www.google.com" target="_blank", >stuff soon</a></li>
+    </ul>
+  </div>
+
+  <style>
+    :root {
+      --horizontal-padding: 200px;
+      --vertical-padding: 50px;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 200%;
+      width: 100%;
+    }
+
+    ul {
+      padding: 0;
+      list-style-type: none;
+    }
+
+    li {
+      color: grey;
+      text-align: center;
+      list-style-type: none;
+      font-size: 120%;
+      width: 100%;
+    }
+
+    .outlined-box {
+      outline: 2px dashed grey;
+      padding-left: var(--horizontal-padding);
+      padding-right: var(--horizontal-padding);
+      padding-top: var(--vertical-padding);
+      padding-bottom: var(--vertical-padding);
+      width: 20%;
+    }
+  </style>
 </body>
 </html>
